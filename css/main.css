@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fuente1: proxima-nova,tahoma,sans-serif;
+    --fuente2: factoria,tahoma,sans-serif;
+    --color1: rgb(0,45,114);
+    --color2: rgb(43,80,138);
+    --color3: rgb(0,114,206);
+    --color4: rgb(104,172,229);
+}
