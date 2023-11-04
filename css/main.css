@@ -6,8 +6,9 @@
 
 :root{
     scroll-behavior: smooth;
-    --fuente1: proxima-nova,tahoma,sans-serif;
-    --fuente2: factoria,tahoma,sans-serif;
+    --font1: proxima-nova,tahoma,sans-serif;
+    --font2: factoria,tahoma,sans-serif;
+    --fontMontserrat: 'Montserrat', sans-serif;
     --color1: rgb(0,45,114);
     --color2: rgb(43,80,138);
     --color3: rgb(0,114,206);
@@ -18,9 +19,83 @@
     height: 100vh;
     z-index: 1;
     width: 100%;
-    height: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.page-content{
+    z-index: 1;
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.19791666666666663) 0%, rgba(104,122,229,0.39959733893557425) 34%, rgba(0,45,144,0.6993172268907564) 100%);
+}
+
+.header-logo{
+    width: 325px;
+    height: 65%;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+
+.header-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.header-menus{
+    text-align: right;
     display: flex;
 }
+
+.menu-option{
+    list-style-type: none;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid .5px rgba(255, 255, 255, 0.39);
+}
+
+.menu-icon{
+
+}
+
+.menu-icon-text{
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon-text p{
+    margin-top: 25%;
+    font-family: var(--fontMontserrat);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.menu-icon i{
+    color: white;
+}
+
+
+.menu-option:hover{
+    background-color: var(--color2);
+    transition: background-color 0.3s ease;
+}
+
+.menu-option:hover .menu-icon i{
+    transform: scale(1.5, 1.5);
+    transition: transform 0.3s ease;
+}
+
+.menu-option:hover .menu-icon-text p{
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+
 
 .video-container{
     background: linear-gradient(90deg, rgba(255,255,255,0.19791666666666663) 0%, rgba(104,122,229,0.39959733893557425) 41%, rgba(0,45,144,0.6993172268907564) 100%), url('https://www.jhu.edu/assets/uploads/2023/07/2023-06_homepage_loop_94_v2-Original.mp4');
