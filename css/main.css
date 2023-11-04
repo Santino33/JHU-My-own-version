@@ -5,6 +5,7 @@
 }
 
 :root{
+    scroll-behavior: smooth;
     --fuente1: proxima-nova,tahoma,sans-serif;
     --fuente2: factoria,tahoma,sans-serif;
     --color1: rgb(0,45,114);
@@ -12,3 +13,46 @@
     --color3: rgb(0,114,206);
     --color4: rgb(104,172,229);
 }
+
+.header{
+    height: 100vh;
+    z-index: 1;
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.video-container{
+    background: linear-gradient(90deg, rgba(255,255,255,0.19791666666666663) 0%, rgba(104,122,229,0.39959733893557425) 41%, rgba(0,45,144,0.6993172268907564) 100%), url('https://www.jhu.edu/assets/uploads/2023/07/2023-06_homepage_loop_94_v2-Original.mp4');
+    background-size: cover;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+
+}
+
+.video-container video{
+    bottom: 0;
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -1;
+}
+
+
+
+
+.french-fries-pages{
+    z-index: 1;
+}
+
+.spread{
+    transform: translate(0);
+}
+
