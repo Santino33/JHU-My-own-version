@@ -337,7 +337,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    padding-top: 3vh;
+    padding-top: 8vh;
 }
 
 .mainNew{
@@ -351,7 +351,7 @@
 }
 
 .firstNewSection{
-    width: 100vw;
+    width: 98.5vw;
     height: 60vh;
     display: flex;
     flex-wrap: nowrap;
@@ -383,14 +383,14 @@
     width: 60%;
     height: 80%;
     transform: translateX(-30%);
-    padding-left: 3vw;
-    padding-top: 3vh;
+    padding-inline: 2vw;
+    padding-top: 2vh;
     border-left:solid 7px var(--color1);
     border-bottom:solid 7px var(--color1);
     z-index: 2;
 }
 
-.noticeSection .caption{
+.noticeSection .caption, .secNoticeSection .caption{
     font-family: var(--fontMarriweather);
     font-size: small;
     color: var(--color3);
@@ -398,6 +398,7 @@
 
 .noticeSection h2{
     font-family: var(--fontOpenSans);
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -419,11 +420,35 @@
 .secondaryNew{
     width: 30vw;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.secNoticeSection{
+    width: 23vw;
+    background-color: white;
+    padding-top: 1vh;
+    padding-inline: 2vw;
+    transform: translateY(-20%);
+}
+
+.secNoticeSection h3{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--fontOpenSans);
+}
+
+.secNoticeSection p:last-child{
+    color: gray;
+    font-size: 15px;
+    font-family: var(--fontOpenSans);
 }
 
 .secondaryNew .imgContainer{
-    width: 20vw;
-    height: 20vh;
+    width: 25vw;
+    height: 25vh;
 }
 
 .secondaryNew .imgContainer img{
@@ -431,12 +456,38 @@
     height: 100%;
 }
 
-
-
-.carousel-item-active img, .carousel-item img{
-    width: 100%;
-    height: 100%;
+.mainNew .buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+.mainNew .buttonContainer button{
+    width: 230px;
+    height: 70px;
+    background-color: var(--color1);
+    font-family: var(--fontMontserrat);
+    font-weight: 600;
+    border: none;
+    margin-bottom: 3vh;
+}
+
+.mainNew .buttonContainer button a{
+    text-decoration: none;
+    color: white;
+}
+
+.mainNew .buttonContainer button:hover{
+    background-color: var(--color4);
+    transition: 0.5s background-color ease;
+}
+
+.mainNew .buttonContainer button:hover a{
+    color: black;
+    transition: 0.5s color ease-out;
+}
+
+
 
 .spread{
     transform: translate(0);
