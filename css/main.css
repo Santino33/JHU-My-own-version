@@ -28,7 +28,13 @@
 
 .page-content{
     z-index: 1;
-    background-image: linear-gradient(180deg, rgba(73, 73, 73, 0.692) 0%, rgba(104, 123, 229, 0.281) 34%, rgb(0, 46, 144) 100%);
+}
+
+.first-section{
+    background-image: linear-gradient(180deg, rgba(73, 73, 73, 0.692) 0%, rgba(104, 123, 229, 0.281) 34%, rgb(0, 45, 144) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
 }
 
 .header-logo{
@@ -261,8 +267,175 @@
     font-size: 18px;
 }
 
-.french-fries-pages{
+.stroke{
+    width: 100%;
+    height: 20px;
+    background-image: url("https://www.jhu.edu/assets/themes/machado/assets/images/homepage/links/links-bg-1-laptop-large-1523aa7d7e.png");
+    transform: translateY(-1110%);
+    transform: translateX(-0%);
+}
+
+.section-links-container{
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 6vh;
+    background-image: url("https://www.jhu.edu/assets/themes/machado/assets/images/homepage/links/links-bg-2-laptop-large-8978532ba7.jpg");
+    
+}
+
+.section-links-container h2{
+    padding: 5px 20px;
+    font-family: var(--fontMontserrat);
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    background-color: var(--color3);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.section-links-container .links-container{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.links-container .link{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.links-container .link a{
+    text-decoration: none;
+}
+
+.links-container .link a p{
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+}
+
+.links-container .link:hover{
+    transition: background-color 0.3s ease;
+    background-color: var(--color3);
+}
+
+.links-container .link:hover a p{
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.section-news{
+    background-image: url("https://www.jhu.edu/assets/themes/machado/assets/images/textures/textured_paper_increased_contrast-894e135412.jpg");
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vh;
+}
+
+.mainNew{
+    background-image: url("https://www.jhu.edu/assets/themes/machado/assets/images/homepage/news/news-bg-wall-blue-57e09992db.svg");
+}
+
+
+.mainNew img{
+    width: 100%;
+    height: 100%;
+}
+
+.firstNewSection{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+.firstNewSection .imgContainer{
+    min-width: 20%;
+    min-height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 89.6984924623%;
+    z-index: 0;
+}
+
+.firstNewSection .imgContainer {
     z-index: 1;
+}
+
+.firstNewSection .imgContainer img{
+    width: 80%;
+    height: 80%;
+}
+
+.noticeSection{
+    background-color: white;
+    width: 60%;
+    height: 80%;
+    transform: translateX(-30%);
+    padding-left: 3vw;
+    padding-top: 3vh;
+    border-left:solid 7px var(--color1);
+    border-bottom:solid 7px var(--color1);
+    z-index: 2;
+}
+
+.noticeSection .caption{
+    font-family: var(--fontMarriweather);
+    font-size: small;
+    color: var(--color3);
+}
+
+.noticeSection h2{
+    font-family: var(--fontOpenSans);
+    font-weight: 700;
+}
+
+.noticeSection p:nth-child(3){
+    color: gray;
+}
+
+.noticeSection p:nth-child(4){
+    font-family: var(--fontOpenSans);
+}
+
+.secondaryNews{
+    display: flex;
+    flex-direction: row;
+    margin-inline: 5vw;
+    justify-content: space-evenly;
+}
+
+.secondaryNew{
+    width: 30vw;
+    height: auto;
+}
+
+.secondaryNew .imgContainer{
+    width: 20vw;
+    height: 20vh;
+}
+
+.secondaryNew .imgContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.carousel-item-active img, .carousel-item img{
+    width: 100%;
+    height: 100%;
 }
 
 .spread{
