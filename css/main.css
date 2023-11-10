@@ -14,6 +14,7 @@
     --color3: rgb(0,114,206);
     --color4: rgb(104,172,229);
     --color5: rgb(22,63,126);
+    --color6: rgb(49,38,29);
 }
 
 .header{
@@ -267,69 +268,7 @@
     font-size: 18px;
 }
 
-.stroke{
-    width: 100%;
-    height: 20px;
-    background-image: url("https://www.jhu.edu/assets/themes/machado/assets/images/homepage/links/links-bg-1-laptop-large-1523aa7d7e.png");
-    transform: translateY(-1110%);
-    transform: translateX(-0%);
-}
 
-.section-links-container{
-    background-color: var(--color1);
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 6vh;
-    background-image: url("https://www.jhu.edu/assets/themes/machado/assets/images/homepage/links/links-bg-2-laptop-large-8978532ba7.jpg");
-    
-}
-
-.section-links-container h2{
-    padding: 5px 20px;
-    font-family: var(--fontMontserrat);
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    background-color: var(--color3);
-    color: white;
-    margin-bottom: 20px;
-}
-
-.section-links-container .links-container{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-}
-.links-container .link{
-    display: flex;
-    flex-direction: column;
-    padding: 5px 8px;
-    align-items: center;
-    cursor: pointer;
-}
-
-.links-container .link a{
-    text-decoration: none;
-}
-
-.links-container .link a p{
-    text-align: center;
-    margin: 0;
-    font-weight: 600;
-    font-size: 18px;
-    color: white;
-}
-
-.links-container .link:hover{
-    transition: background-color 0.3s ease;
-    background-color: var(--color3);
-}
-
-.links-container .link:hover a p{
-    transition: color 0.3s ease;
-    color: black;
-}
 
 .section-news{
     background-image: url("https://www.jhu.edu/assets/themes/machado/assets/images/textures/textured_paper_increased_contrast-894e135412.jpg");
@@ -485,6 +424,220 @@
 .mainNew .buttonContainer button:hover a{
     color: black;
     transition: 0.5s color ease-out;
+}
+
+
+
+.programsSection{
+    background-image: url("https://www.jhu.edu/assets/themes/machado/assets/images/homepage/baltimore/baltimore-bg-laptop-large-blue-d1471aa77a.jpg");
+}
+
+.facultiesMenu{
+    display: grid;
+    grid-template-rows: 60vh 1fr ;
+    width: 100vw;
+    height: auto;
+}
+
+.inputSearch{
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 20vh 1fr 25vh;
+    grid-template-columns: 20vw 1fr 20vw;
+}
+
+.inputSearch .search{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 20vh;
+    border: solid 5px var(--color4);
+}
+
+.inputSearch .search input{
+    width: 100%;
+    height: 10vh;
+    border: 0;
+
+    border: 2px solid #ccc; /* Borde de 2 píxeles de ancho y color gris claro */
+    font-size: 16px; /* Tamaño de letra de 16 píxeles */
+    padding: 10px; /* Espacio de 10 píxeles entre el borde y el contenido */
+
+    font-family: var(--fontMontserrat);
+    font-size: 18px;
+}
+
+.inputSearch .search input:focus{
+    outline: none; /* Quita el contorno al seleccionar el input */
+  border-color: var(--color4); /* Cambia el color del borde al seleccionar el input */
+  box-shadow: 0 0 5px var(--color4);
+}
+
+.inputSearch .search button{
+    width: 100%;
+    height: 10vh;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color4);
+}
+
+.inputSearch .search button p{
+    margin:0;
+    font-family: var(--fontMontserrat);
+    color: var(--color6);
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.inputSearch .search button:hover{
+    background-color: var(--color1);
+    transition: 0.5s background-color ease;
+
+
+}
+
+.inputSearch .search button:hover p, .inputSearch .search button:hover i{
+    color: white;
+    transition: 0.5s color ease;
+}
+
+
+.facultiesSection{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 10vw;
+}
+
+.facultiesSection .stroke{
+    width: 80vw;
+    height: 3px;
+    background-color: white;
+    border-radius: 3rem;
+    margin: 0 auto;
+}
+
+.facultiesSection h2{
+    text-align: center;
+    font-family: var(--fontMarriweather);
+
+    margin-top: 5vh;
+    padding: 6px;
+    color: var(--color6);
+    background-color: var(--color4);
+}
+
+.facultiesSection ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+}
+
+.facultiesSection ul li{
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    margin-inline: 3vw;
+    margin-bottom: 1vh;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facultiesSection ul li:hover{
+    background-color: var(--color4);
+    transition: 0.4s background-color ease;
+    transition: 0.4s transform ease;
+    transform:translateY(-10%)
+}
+
+.facultiesSection ul li:hover a p{
+    color: var(--color6);
+    transition: 0.4s color ease;
+    
+}
+
+.facultiesSection ul li a{
+    text-decoration: none;
+    margin: 0;
+    
+}
+
+.facultiesSection ul li a p{
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-family: var(--fontOpenSans);
+    font-weight: 600;
+
+}
+
+
+
+
+.section-links-container{
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 6vh;
+    background-image: url("https://www.jhu.edu/assets/themes/machado/assets/images/homepage/links/links-bg-2-laptop-large-8978532ba7.jpg");
+    
+}
+
+.section-links-container h2{
+    padding: 5px 20px;
+    font-family: var(--fontMontserrat);
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    background-color: var(--color3);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.section-links-container .links-container{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.links-container .link{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.links-container .link a{
+    text-decoration: none;
+}
+
+.links-container .link a p{
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+}
+
+.links-container .link:hover{
+    transition: background-color 0.3s ease;
+    background-color: var(--color3);
+}
+
+.links-container .link:hover a p{
+    transition: color 0.3s ease;
+    color: black;
 }
 
 
