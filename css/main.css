@@ -18,6 +18,10 @@
     --color7: rgb(213,220,232);
 }
 
+body,html{
+    scroll-snap-type: y mandatory;
+}
+
 .header{
     height: 100vh;
     z-index: 1;
@@ -37,6 +41,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
+    scroll-snap-align: center;
 }
 
 .header-logo{
@@ -278,6 +283,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 8vh;
+    scroll-snap-align: start;
 }
 
 .mainNew{
@@ -431,6 +437,7 @@
 
 .programsSection{
     background-image: url("https://www.jhu.edu/assets/themes/machado/assets/images/homepage/baltimore/baltimore-bg-laptop-large-blue-d1471aa77a.jpg");
+    scroll-snap-align: center;
 }
 
 .facultiesMenu{
@@ -587,6 +594,7 @@
     font-family: var(--fontOpenSans);
     padding-top: 15vh;
     padding-bottom: 15vh;
+    scroll-snap-align: start;
 }
 
 .footer ul{
