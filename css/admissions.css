@@ -28,7 +28,7 @@ body,html{
     height: 100px;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color1);
+    background-color: #000;
 }
 
 .page-content{
@@ -211,7 +211,7 @@ body,html{
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 20vw 1fr 20vw;
-    height: 85vh;
+    height: 80vh;
 
     background-image:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(253, 253, 253, 0.603) 100%),url('../img/DSCF7383-1600x800.jpg');
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
@@ -228,6 +228,7 @@ body,html{
 .main-text-container .main-text{
     grid-row: 2/3;
     text-align: center;
+    margin-top: 10vh;
 }
 
 .main-text-container .main-text h1{
@@ -236,7 +237,7 @@ body,html{
 }
 
 .main-text-container .main-text .path-section{
-    background-color: var(--color1);
+    background-color: #000;
     font-family: var(--fontOpenSans);
     margin-inline: 20vw;
     color: white;
@@ -277,7 +278,7 @@ body,html{
 }
 
 .info{
-    width: 55vw;
+    width: 60vw;
     padding-inline: 3vw;
     padding-top: 5vh;
 }
@@ -295,19 +296,200 @@ body,html{
     padding-inline: 2vw;
     border: solid 2px black;
     background-color: white;
+    font-family: var(--fontOpenSans);
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.836);
+    transition: 0.3 color ease;
+    transition: 0.3s background-color ease;
+    transition: 0.3s border-color ease;
+}
+
+.info button:hover{
+    
+    background-color: var(--color3);
+    color: white;
+    border: solid var(--color3);
+}
+
+.info .section1, .info .section2, .info .section3, .info .section4{
+    margin-bottom: 6vh;
 }
 
 .info .section1 p{
     font-family: var(--fontOpenSans);
 }
 
-
-
-
-.students{
-    width: 25vw;
+.info .section2 a{
+    font-family: var(--fontOpenSans);
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.788);
+    text-decoration-color: var(--color1);
 }
 
+.info .section2 a:hover{
+    color: white;
+    background-color: var(--color1);
+    transition: 0.3s color ease;
+    transition: 0.3s background-color ease;
+}
+
+.students{
+    width: 20vw;
+    padding-inline: 2vw;
+    background-color: rgba(228, 228, 228, 0.835)
+}
+
+.students a img{
+    width: 80%;
+    height: 80%;
+    margin-left: 1.5vw;
+    margin-top: 5vh;
+}
+
+.students p{
+    font-family: var(--fontOpenSans);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.767);
+}
+
+.students .student p:first-of-type{
+    font-size: 18px;
+    font-family: var(--fontOpenSans);
+
+}
+
+.students .tip i{
+    scale: 500%;
+    margin-bottom: 7vh;
+    margin-top: 7vh;
+    margin-left: 7vw;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: var(--color1);
+    font-family: var(--fontOpenSans);
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    scroll-snap-align: start;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer .sectionFooter:nth-child(2){
+    padding-top: 0vh;
+}
+
+.sectionFooter:nth-child(2) h3{
+    color: white;
+}
+
+.location{
+    display: flex;
+    color: var(--color7);
+}
+
+.location i{
+    margin-top: 5px;
+}
+
+.socialMedia{
+    margin-bottom: 3vh;
+    padding-left: 2vw;
+}
+
+.socialMedia i{
+    color: var(--color7);
+    width: 3vw;
+    transform: scale(190%);
+}
+
+.socialMedia i:hover{
+    color: var(--color4);
+    transition: 0.3s color ease;
+}
+
+.copyright{
+    color: var(--color7);
+}
+
+.sectionFooter:nth-child(3){
+    
+    padding-right: 3vw;
+
+}
+
+.sectionFooter:nth-child(3) .inputFooter{
+    display: flex;
+    width: 20vw;
+    height: 7.5vh;
+    border: 0;
+    padding:0;
+    border: solid 5px var(--color2);
+    margin-bottom: 4vh;
+}
+
+.inputFooter input{
+    border: 0;
+    width: 100%;
+    height: 6vh;
+    padding-inline: 1vw;
+    font-family: var(--fontOpenSans);
+}
+
+.inputFooter input:focus{
+    outline: none; /* Quita el contorno al seleccionar el input */
+    border-color: var(--color4); /* Cambia el color del borde al seleccionar el input */
+    box-shadow: 0 0 5px var(--color4);
+}
+
+.inputFooter button{
+    border: 0;
+    width: 5vw;
+    background-color: var(--color2);
+}
+
+.inputFooter button:hover{
+    background-color: var(--color1);
+    transition: 0.3s background-color ease;
+}
+
+.inputFooter button:hover i{
+    color: white;
+    transition: 0.3s transform ease;
+    transform: scale(120%);
+}
+
+.sectionFooter:nth-child(3) ul li{
+    width: 80%;
+    height: 6vh
+}
+
+.sectionFooter:nth-child(3) ul li:hover{
+    cursor: pointer;
+    background-color: var(--color5);
+    transition: 0.4s background-color ease;
+}
+
+.sectionFooter:nth-child(3) ul li:hover a p{
+    color: white;
+    transition: 0.4s color ease;
+}
+
+.sectionFooter:nth-child(3) ul li a p{
+    color: var(--color4);
+    padding-top: 1vh;
+    padding-left: 1vw;
+}
 
 
 .spread{
