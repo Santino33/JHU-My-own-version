@@ -495,3 +495,70 @@ footer .sectionFooter:nth-child(2){
 .spread{
     transform: translate(0);
 }
+
+@media screen and (max-width:800px){
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-menus{
+        visibility: hidden;
+    }
+    .header-logo img{
+        width: 80%;
+        height: 80%;
+        margin-top: 2vh;
+    }
+    .main-content{
+        display: flex;
+        justify-content: flex-start;
+        height: 30vh;
+        width: 100vw;
+    }
+
+    .main-content h1, .main-content p{
+        text-align: left;
+    }
+
+    .main-content .main-text-container h1{
+        font-size: 30px;
+        margin-left: 3vw;
+    }
+    .path-section{
+        margin-left: 3vw !important;
+        font-size: 18px ;
+    }
+
+    .info{
+        width: 70vw;
+    }
+    .students{
+        width: 30vw;
+    }
+    .route{
+        display: none;
+        visibility: hidden;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionFooter >*{
+        justify-content: center;
+        text-align: center;
+    }
+    .socialMedia{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sectionFooter:nth-child(3) .inputFooter{
+        width: 80vw;
+    }
+    .inputFooter button{
+        width: 10vw;
+    }
+    .sectionFooter:nth-child(3) ul li {
+        width: 85vw;
+    }
+}
