@@ -29,8 +29,18 @@ body,html{
     height: 100px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+
     background-color: #000;
+    transition: 0.3s background-color ease;
 }
+
+.header.sticky{
+    background-color: white;
+    transition: 0.3s background-color ease;
+}
+
 
 .page-content{
     z-index: 1;
@@ -375,6 +385,7 @@ body,html{
     margin-top: 7vh;
     margin-left: 7.5vw;
     color: var(--color1);
+    z-index: 0;
 }
 
 footer{
@@ -502,7 +513,9 @@ footer .sectionFooter:nth-child(2){
     padding-left: 1vw;
 }
 
-
+.sticky{
+    background-color: white;
+}
 .spread{
     transform: translate(0);
 }
