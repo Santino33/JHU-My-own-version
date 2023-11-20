@@ -627,6 +627,9 @@ footer .sectionFooter:nth-child(2){
     .info .section4 h2{
         margin-right: 5vw;
     }
+    .students .tip i{
+        margin-left: 12vw;
+    }
     footer{
         display: flex;
         flex-direction: column;

@@ -351,10 +351,14 @@ body,html{
     height: 80%;
     margin-left: 1.5vw;
     margin-top: 5vh;
+    border-bottom: solid 8px var(--color1);
 }
 
 .students p{
-    font-family: var(--fontOpenSans);
+    margin: 0;
+    font-family: var(--fontMarriweather);
+    font-weight: 600;
+    font-size: 14px;
     text-align: center;
     color: rgba(0, 0, 0, 0.767);
 }
@@ -369,7 +373,8 @@ body,html{
     scale: 500%;
     margin-bottom: 7vh;
     margin-top: 7vh;
-    margin-left: 7vw;
+    margin-left: 7.5vw;
+    color: var(--color1);
 }
 
 footer{
@@ -545,6 +550,9 @@ footer .sectionFooter:nth-child(2){
     .route{
         display: none;
         visibility: hidden;
+    }
+    .students .tip i{
+        margin-left: 12vw;
     }
     footer{
         display: flex;
