@@ -9,6 +9,7 @@
     --fontOpenSans: 'Open Sans', sans-serif;
     --fontMontserrat: 'Montserrat', sans-serif;
     --fontMarriweather: 'Merriweather', serif;
+    --fontNotoSerif: 'Noto Serif JP', serif;
     --color1: rgb(0,45,114);
     --color2: rgb(43,80,138);
     --color3: rgb(0,114,206);
@@ -232,7 +233,7 @@ body,html{
 }
 
 .main-text-container .main-text h1{
-    font-family: var(--fontMarriweather);
+    font-family: var(--fontNotoSerif);
     font-size: 60px;
 }
 
