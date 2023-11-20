@@ -280,6 +280,79 @@ body,html{
     width: 49vw;
     height: 90vh;
     text-align: center;
-    padding-top: 70vh;
+    padding-top: 50vh;
 }
+
+.careerSection .career:nth-child(1){
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.40800070028011204) 51%, rgba(255,255,255,0.16430322128851538) 100%), url("../img/publicHealth.jpg");
+}
+
+.careerSection .career:nth-child(2){
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.40800070028011204) 51%, rgba(255,255,255,0.16430322128851538) 100%), url("../img/business.jpg");
+}
+
+.careerSection .career:nth-child(3){
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.40800070028011204) 51%, rgba(255,255,255,0.16430322128851538) 100%), url("../img/science.jpeg");
+}
+
+.careerSection .career:nth-child(4){
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.40800070028011204) 51%, rgba(255,255,255,0.16430322128851538) 100%), url("../img/peabody.jpg");
+}
+
+.careerSection .career:nth-child(5){
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.40800070028011204) 51%, rgba(255,255,255,0.16430322128851538) 100%), url("../img/international.jpeg");
+}
+
+.careerSection .career:nth-child(6){
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.40800070028011204) 51%, rgba(255,255,255,0.16430322128851538) 100%), url("../img/clarke.jpg");
+}
+
+.careerSection .career:nth-child(7){
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.40800070028011204) 51%, rgba(255,255,255,0.16430322128851538) 100%), url("../img/medicine.jpeg");
+}
+
+.careerSection .career:nth-child(8){
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.40800070028011204) 51%, rgba(255,255,255,0.16430322128851538) 100%), url("../img/nursing.jpg");
+}
+
+.careerSection .career:nth-child(9){
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.40800070028011204) 51%, rgba(255,255,255,0.16430322128851538) 100%), url("../img/engineering.jpg");
+}
+
+.careerSection .career:nth-child(10){
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.40800070028011204) 51%, rgba(255,255,255,0.16430322128851538) 100%), url("../img/arts.jpg");
+}
+
+.careerSection .career .moreInfo{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.careerSection .career .moreInfo p{
+    font-size: 18px;
+    font-family: var(--fontOpenSans);
+}
+
+.careerSection .career .moreInfo a{
+    cursor: pointer;
+}
+
+.careerSection .career .moreInfo a i{
+    margin-top: 1vh;
+    margin-left: 2vw;
+    scale: 300%;
+    color: white;
+}
+
 
