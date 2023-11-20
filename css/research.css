@@ -262,6 +262,11 @@ body,html{
     width: 15vw;
 }
 
+.route .element:nth-child(5) a{
+    color: var(--color2);
+    font-size: 18px;
+}
+
 .route .element a{
     text-decoration: none;
     font-family: var(--fontOpenSans);

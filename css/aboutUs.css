@@ -214,7 +214,7 @@ body,html{
     grid-template-columns: 20vw 1fr 20vw;
     height: 80vh;
 
-    background-image:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(253, 253, 253, 0.603) 100%),url('../img/DSCF7383-1600x800.jpg');
+    background-image:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(253, 253, 253, 0.603) 100%),url('../img/11-1600x800.jpg');
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-repeat: no-repeat; 
 }
@@ -262,9 +262,10 @@ body,html{
     width: 15vw;
 }
 
-.route .element:nth-child(4) a{
+.route .element:first-child a{
     color: var(--color2);
-    font-size: 18px;
+    font-size: 20px;
+
 }
 
 .route .element a{
@@ -321,23 +322,38 @@ body,html{
     margin-bottom: 6vh;
 }
 
-.info .section1 p{
+.info .section1 p, .info .section2 p{
     font-family: var(--fontOpenSans);
-}
-
-.info .section2 a{
-    font-family: var(--fontOpenSans);
-    font-weight: 600;
     font-size: 18px;
-    color: rgba(0, 0, 0, 0.788);
-    text-decoration-color: var(--color1);
 }
 
-.info .section2 a:hover{
-    color: white;
-    background-color: var(--color1);
-    transition: 0.3s color ease;
-    transition: 0.3s background-color ease;
+.info .section1 p:nth-child(3){
+    width: 50vw;
+    border-left: solid 7px var(--color1);
+    padding: 20px;
+    margin-left: 2vw;
+    font-family: var(--fontMarriweather);
+    color: #000000a8;
+    font-size: 20px;
+}
+
+.info .section2 .profile{
+    display: flex;
+    height: 50px;
+    border-radius: 10em;
+}
+
+.info .section2 .profile a img{
+    width: auto;
+    height: 100%;
+    border-radius: 150px;
+}
+
+.info .section2 .profile p:first-of-type{
+    margin-top: 2vh;
+    margin-left: 1vw;
+    font-weight:600;
+    font-size: 17px;
 }
 
 .students{
@@ -351,10 +367,14 @@ body,html{
     height: 80%;
     margin-left: 1.5vw;
     margin-top: 5vh;
+    border-bottom: solid 8px var(--color1);
 }
 
 .students p{
-    font-family: var(--fontOpenSans);
+    margin: 0;
+    font-family: var(--fontMarriweather);
+    font-weight: 600;
+    font-size: 14px;
     text-align: center;
     color: rgba(0, 0, 0, 0.767);
 }
@@ -369,7 +389,14 @@ body,html{
     scale: 500%;
     margin-bottom: 7vh;
     margin-top: 7vh;
-    margin-left: 7vw;
+    margin-left: 7.5vw;
+    color: var(--color1);
+}
+
+.students .tip h1{
+    text-align: center;
+    font-family: var(--fontMontserrat);
+    font-weight: 600;
 }
 
 footer{
@@ -520,7 +547,7 @@ footer .sectionFooter:nth-child(2){
         display: flex;
         justify-content: flex-start;
         height: 30vh;
-        width: 100vw;
+
     }
 
     .main-content h1, .main-content p{
@@ -546,6 +573,20 @@ footer .sectionFooter:nth-child(2){
         display: none;
         visibility: hidden;
     }
+
+    .info .section4{
+        display: flex;
+        flex-direction: column;
+        padding-inline: 5vw;
+        width: 65vw;
+    }
+    .info .section4 p{
+        width: 100%;
+        text-align: justify;
+    }
+    .info .section4 h2{
+        margin-right: 5vw;
+    }
     footer{
         display: flex;
         flex-direction: column;
@@ -566,5 +607,18 @@ footer .sectionFooter:nth-child(2){
     }
     .sectionFooter:nth-child(3) ul li {
         width: 85vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header .header-logo img{
+        justify-content: center;
+        width: 65%;
+        height: 65%;
+        margin-inline: 10vw;
+    }
+    .students{
+        display: none;
+        visibility: hidden;
     }
 }
