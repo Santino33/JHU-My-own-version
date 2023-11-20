@@ -1,5 +1,6 @@
 var header = document.querySelector(".header");
 var logo = document.querySelector(".logo");
+var prevScrollPos = window.pageXOffset;
 
 // Añadir un evento de scroll al window
 window.addEventListener("scroll", function () {
@@ -18,3 +19,16 @@ window.addEventListener("scroll", function () {
         logo.src = "../img/university-logo-small-horizontal-white-no-clear-space-e44019a003.png";
     }
 });
+
+window.onscroll = function(){
+    var currentScrollPos = window.pageYOffset;
+    if(prevScrollPos > currentScrollPos){
+        //Deslizando hacia arriba
+        header.style.top = "0";
+        }else{
+            //Deslizando hacia abajo
+            
+            header.style.top = "-100px";
+        }
+        prevScrollPos = currentScrollPos;
+};

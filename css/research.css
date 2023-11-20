@@ -29,11 +29,12 @@ body,html{
     height: 100px;
     display: flex;
     justify-content: space-between;
-
     position: fixed;
     z-index: 1;
 
     background-color: #000;
+    top: 0;
+    transition: top 0.3s ease;
     transition: 0.3s background-color ease;
 }
 
